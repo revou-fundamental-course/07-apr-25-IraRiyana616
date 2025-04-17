@@ -1,4 +1,1 @@
-Nama: Ira Riyana Sari Siregar
-Class: Software Engineering - Fundamental Course
-Project: Submission Website Portofolio
-Live Site: https://revou-fundamental-course.github.io/07-apr-25-IraRiyana616/ 
+Nama: Ira Riyana Sari Siregar<br>  Class: Software Engineering - Fundamental Course<br>  Project: Submission Website Portofolio<br>  Live Site: https://revou-fundamental-course.github.io/07-apr-25-IraRiyana616/ 
