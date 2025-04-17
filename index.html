@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="js/script.js" />
+  </head>
+
+  <body>
+    <!-- Dialog Form -->
+    <div id="name-dialog" class="dialog-backdrop">
+      <div class="dialog-box">
+        <h3>Masukkan Nama Anda</h3>
+        <input
+          type="text"
+          id="name-input"
+          placeholder="Nama Anda..."
+          maxlength="10"
+          oninput="validateInput(event)" />
+        <button onclick="submitName()">Submit</button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+      <nav class="container-row">
+        <a href="#home-section">Home</a>
+        <a href="#our-profile-section">Our Profile</a>
+        <a href="#portofolio-section">Portofolio</a>
+        <a href="#message-us-section">Message Us</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Home Section -->
+      <section id="home-section">
+        <header>
+          <h1 id="greeting-text">Hi, Welcome to my website</h1>
+          <h3 id="tagline-text">Latihan pertama, Langkah Awal Menuju Impian</h3>
+        </header>
+      </section>
+
+      <!-- Our Profile Section -->
+      <section id="our-profile-section">
+        <div class="profile-container">
+          <div class="profile-image">
+            <img src="assets/image2.png" alt="Foto" />
+          </div>
+          <div class="profile-text">
+            <h1>Our Profile</h1>
+            <p>
+              Selamat datang di ReVoU! Kami adalah platform pembelajaran online
+              yang berdedikasi untuk membantu Anda mencapai tujuan pendidikan
+              dan karir. Dengan pengalaman dan pengetahuan yang luas, kami
+              menyediakan berbagai sumber daya dan layanan untuk mendukung
+              kesuksesan Anda.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portofolio Section -->
+      <section id="portofolio-section">
+        <h1>Awards Received</h1>
+
+        <div class="testimoni-container">
+          <div class="testimoni-card">
+            <img src="assets/image3.jpg" alt="Award1" class="awards-photo" />
+            <p class="awards-name">TOP DIGITAL Awards</p>
+            <p class="awards-comment">
+              "Penghargaan yang diberikan kepada perusahaan yang berhasil dalam
+              implementasi dan pemanfaatan teknologi digital"
+            </p>
+          </div>
+
+          <div class="testimoni-card">
+            <img src="assets/image3.jpg" alt="Award2" class="awards-photo" />
+            <p class="awards-name">KI Awards</p>
+            <p class="awards-comment">
+              "Penghargaan yang diberikan kepada badan publik yang
+              mengimplementasikan Keterbukaan Informasi Publik"
+            </p>
+          </div>
+
+          <div class="testimoni-card">
+            <img src="assets/image3.jpg" alt="Award3" class="awards-photo" />
+            <p class="awards-name">Penghargaan Desain Red Dot</p>
+            <p class="awards-comment">
+              "Penghargaan yang diberikan kepada perusahaan atau individu yang
+              memiliki desain produk atau jasa yang inovatif dan berkualitas
+              tinggi"
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Message Us Section -->
+      <section id="message-us-section">
+        <header>
+          <h2>Message Us</h2>
+        </header>
+
+        <!-- Message Us Form -->
+        <form id="message-form">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <div>
+            <button type="button" onclick="validateForm()">Submit</button>
+          </div>
+        </form>
+
+        <!-- Chat Output -->
+        <div
+          id="chat-output"
+          style="margin-top: 20px; border: 1px solid #ccc; padding: 10px"></div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Section */
+main {
+  padding-top: 60px;
+}
+
+/* Navbar */
+.main-header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.container-row {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.container-row a {
+  text-decoration: none;
+  color: #44968a;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.container-row a:hover {
+  color: #000000;
+}
+
+/* Dialog */
+.dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.dialog-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: auto;
+  text-align: center;
+}
+
+.dialog-box h3 {
+  margin-bottom: 1rem;
+}
+
+.dialog-box input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.dialog-box button {
+  padding: 0.5rem 1rem;
+  background-color: #44968a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.dialog-box button:hover {
+  background-color: #0e6b8f;
+}
+
+/* Greeting */
+#greeting-text {
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 14rem;
+  padding-left: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+#tagline-text {
+  font-size: 1.5rem;
+  color: white;
+  padding-left: 3.5rem;
+}
+
+/* Home Section */
+#home-section {
+  background: url('../assets/image.png') no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+
+/* Our Profile */
+#our-profile-section {
+  padding: 30px;
+  background-color: #f8f9fa;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-text {
+  padding: 30px;
+  font-size: 1rem;
+  max-width: 50%;
+}
+
+.profile-text h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.profile-text p {
+  line-height: 2;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.profile-image {
+  flex: 1;
+  max-width: 45%;
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container-row {
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  #greeting-text {
+    font-size: 1.8rem;
+    padding-top: 10rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+  }
+
+  #tagline-text {
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-text,
+  .profile-image {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .profile-text h1 {
+    font-size: 32px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .profile-text p {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+#portofolio-section h1 {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  background-color: #44968a;
+  padding: 30px;
+}
+
+/* Testimoni Section */
+.testimoni-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #44968a;
+}
+
+.testimoni-card {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.awards-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.awards-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.awards-comment {
+  font-style: italic;
+  color: #555;
+}
+
+/* Message Us Section */
+#message-us-section {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+#message-us-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Form Styling */
+#message-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#message-form div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#message-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#message-form input,
+#message-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#message-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+#message-form button {
+  background-color: #44968a;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+#message-form button:hover {
+  background-color: #0e6b8f;
+}
+
+/* Chat Output Box */
+#chat-output {
+  max-width: 600px;
+  margin: 30px auto 0;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-message {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.chat-message p {
+  margin: 5px 0;
+}
+
+.chat-message small {
+  color: #666;
+}
